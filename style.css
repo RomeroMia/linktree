@@ -1,0 +1,136 @@
+body{
+ font-family: 'Roboto', sans-serif; /* Fuente */
+ background-image: url(./index/background);
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ margin: 0;
+ background-color: rgb(5, 0, 54);   
+}
+
+a{color: rgb(0, 230, 180);text-decoration: none;
+}
+
+h2{ 
+ font-size: 30px;
+ margin: 0px;
+ color:white;
+ text-shadow: 0 0 10px #289eff, 0 0 20px #045da7, 0 0 30px #008cff;
+ font-family: "Indie Flower", cursive;
+ animation: flameTitle 1.5s infinite alternate;
+}
+
+@keyframes flameTitle {
+    0% {
+        text-shadow: 0 0 10px rgb(94, 201, 255), 0 0 20px rgb(73, 194, 255), 0 0 30px rgb(0, 72, 108);
+    }
+    50% {
+        text-shadow: 0 0 15px rgb(94, 201, 255), 0 0 25px rgb(73, 194, 255), 0 0 35px rgb(0, 72, 108);
+    }
+    100% {
+        text-shadow: 0 0 10px rgb(94, 201, 255), 0 0 20px rgb(73, 194, 255), 0 0 30px rgb(0, 72, 108);
+    }
+}
+
+input{  
+font-family: 'Roboto', sans-serif; /* Fuente */
+background-color: rgb(0, 170, 255);
+color: rgb(25, 45, 55);
+padding: 10px 20px;
+margin-bottom: 5px;
+font-size: 15px;
+border-radius: 200px;
+border: 2px solid rgb(25, 45, 55);
+transition: all 0.3s ease;
+}
+
+::placeholder{
+color: rgb(25, 45, 55);
+font-size: 15px;}
+
+input:focus {
+    outline: none;
+    animation: flameInput 1s infinite alternate;
+}
+
+@keyframes flameInput {
+    0% { box-shadow: 0 0 10px rgb(94, 201, 255), 0 0 20px rgb(73, 194, 255), 0 0 30px rgb(0, 72, 108); }
+    50% { box-shadow: 0 0 15px rgb(94, 201, 255), 0 0 25px rgb(73, 194, 255), 0 0 35px rgb(0, 72, 108); }
+    100% { box-shadow: 0 0 10px rgb(94, 201, 255), 0 0 20px rgb(73, 194, 255), 0 0 30px rgb(0, 72, 108); }
+}
+
+button{
+font-family: 'Roboto', sans-serif; /* Fuente */
+background-color: rgb(0, 255, 162);
+color: rgb(0, 0, 0);
+padding: 10px 20px;
+margin-bottom: 5px;
+font-size: 15px;
+border-radius: 200px;
+border: 0;
+transition: all 0.3s ease;
+}
+
+button:focus {
+    outline: none;
+    animation: flameButton 1s infinite alternate;
+}
+
+@keyframes flameButton {
+    0% { box-shadow: 0 0 10px rgb(105, 255, 200), 0 0 20px rgb(0, 255, 162), 0 0 30px rgb(0, 131, 83); }
+    50% { box-shadow: 0 0 15px rgb(105, 255, 200), 0 0 25px rgb(0, 255, 162), 0 0 35px rgb(0, 131, 83); }
+    100% { box-shadow: 0 0 10px rgb(105, 255, 200), 0 0 20px rgb(0, 255, 162), 0 0 30px rgb(0, 131, 83); }
+}
+
+/* Hover para botones */
+button:hover {
+    animation: flameButtonHover 1s infinite alternate;
+    cursor: pointer;
+}
+
+@keyframes flameButtonHover {
+    0% { box-shadow: 0 0 10px rgb(105, 255, 200), 0 0 20px rgb(0, 255, 162), 0 0 30px rgb(0, 131, 83); }
+    50% { box-shadow: 0 0 15px rgb(105, 255, 200), 0 0 25px rgb(0, 255, 162), 0 0 35px rgb(0, 131, 83); }
+    100% { box-shadow: 0 0 10px rgb(105, 255, 200), 0 0 20px rgb(0, 255, 162), 0 0 30px rgb(0, 131, 83); }
+}
+
+/* Hover para links */
+a:hover {
+    text-shadow: 0 0 5px rgb(0, 230, 180), 0 0 10px rgb(0, 185, 176), 0 0 15px rgb(0, 142, 185);
+    transition: all 0.3s ease;
+}
+input:hover {
+    cursor: text; /* opcional */
+    box-shadow: 0 0 8px rgb(94, 201, 255), 0 0 15px rgb(73, 194, 255); /* efecto sutil al pasar el mouse */
+}
+
+#caja{
+ background-color: rgba(0, 0, 0, 0.7);
+ padding: 25px 50px;
+ border-radius: 200px;
+ text-align: center;
+}
+/* Video de fondo */
+#fondoVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* cubre toda la pantalla */
+  z-index: -1; /* detrás de todo */
+}
+
+/* Contenido encima del video */
+#caja {
+  position: relative; /* para estar sobre el video */
+  background-color: rgba(0,0,0,0.7); /* semi-transparente */
+  padding: 25px 50px;
+  border-radius: 200px;
+  text-align: center;
+  z-index: 1;
+}

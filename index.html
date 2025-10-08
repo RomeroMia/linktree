@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javier</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Video de fondo -->
+    <video autoplay muted loop id="fondoVideo">
+        <source src="./index/Hogwarts Illustration.mp4" type="video/mp4">
+        Tu navegador no soporta video de fondo.
+    </video>
+ <div id="caja">
+    <div id="login-register">
+     <h2>INICIAR SESIÓN/ REGISTRARSE</h2>
+     <input type="text" id="usuario" placeholder="Usuario"><br>
+     <input type="password" id="password" placeholder="Contraseña"><br>
+     <button onclick="registrar()">Registrarse</button>
+     <button onclick="login()">Iniciar Sesión</button>
+     <p id="mensaje"></p>
+    </div>
+
+    <div id="links" style="display:none;">
+     <h2>Calculadora de IMC</h2>
+     <h3><a href="https://romeromia.github.io/imc/" target="_blank" aria-label="Ir al sitio web de IMC de Ortiz Bautista">https://romeromia.github.io/imc/</a></h3>
+     <h2>Calculadora de medidas</h2>
+     <h3><a href="https://romeromia.github.io/cdm/" target="_blank" aria-label="Ir al sitio web de CDM de Ortiz Bautista">https://romeromia.github.io/cdm/</a></h3>
+     <h2>Perfil de GitHub</h2>
+     <h3><a href="https://github.com/OrtizBautista" target="_blank" aria-label="Ir al sitio web de CDM de Ortiz Bautista">https://github.com/OrtizBautista/</a></h3>
+     <button onclick="cerrarSesion()">Cerrar Sesión</button>
+    </div>
+ </div>
+  <script src="script.js"></script>
+</body>
+</html>
